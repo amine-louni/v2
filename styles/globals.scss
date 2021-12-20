@@ -1,13 +1,8 @@
-// Custom.scss
-@import "./theme/custom.scss";
+@import "./theme/variables.scss";
+@import "./theme/reset";
+@import "./theme/reset";
+@import "./theme/buttons";
 
-// Option B: Include parts of Bootstrap
-
-// Required
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
-
-// Optional
-
-@import "../node_modules//bootstrap/scss/bootstrap.scss";
+body {
+  background-color: var(--blue);
+}
