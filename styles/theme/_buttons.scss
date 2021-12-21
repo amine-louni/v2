@@ -15,4 +15,8 @@
   &::first-letter {
     text-transform: uppercase;
   }
+  &-sm {
+    padding: 10px 20px;
+    font-size: var(--fz-xs);
+  }
 }

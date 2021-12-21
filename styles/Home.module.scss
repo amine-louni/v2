@@ -79,6 +79,7 @@
   background-color: var(--green);
   overflow: hidden;
   flex-grow: 1;
+  border-top-left-radius: var(--border-radius);
   @media only screen and (max-width: 768px) {
     display: none;
   }
@@ -121,5 +122,56 @@
   }
 }
 
+.section-title {
+  margin-bottom: var(--spacing-md);
+  &-dark {
+    color: var(--dark);
+
+    & span {
+      color: var(--yellow-dark);
+      font-family: var(--font-mono);
+      font-size: var(--fz-xl);
+    }
+  }
+}
 .aboutSection {
+  padding: var(--spacing-xxl) 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg-heading {
+  color: var(--blue-transparent);
+  position: absolute;
+  top: 6rem;
+  right: -1rem;
+  font-size: 17rem;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.skillsList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+  li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    &::before {
+      content: "▶";
+      position: absolute;
+      left: 0px;
+      color: var(--yellow-dark);
+      font-size: var(--fz-xxs);
+      line-height: 12px;
+    }
+  }
 }

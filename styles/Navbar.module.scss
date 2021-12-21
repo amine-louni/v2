@@ -5,6 +5,7 @@
   ul {
     list-style-type: none;
     display: flex;
+    align-items: center;
     li {
       font-family: var(--font-mono);
       padding: 7px 14px;

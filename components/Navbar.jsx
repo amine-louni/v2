@@ -18,6 +18,10 @@ const Navbar = () => {
           <li>
             <span>04.</span> contact
           </li>
+
+          <li>
+            <button className="btn btn-sm">Resume</button>
+          </li>
         </ul>
       </div>
     </nav>

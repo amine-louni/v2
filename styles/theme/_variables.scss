@@ -1,6 +1,6 @@
 :root {
   --blue: #3102a8;
-  --blue-transparent: rgba(#3102a8, 0.1);
+  --blue-transparent: #3102a81a;
   --yellow: #f5e205;
   --yellow-light: #e2ecd0;
   --yellow-transparent: #f5e10536;
@@ -23,6 +23,7 @@
   --spacing-xs: 5px;
   --spacing-md: 2rem;
   --spacing-xl: 3rem;
+  --spacing-xxl: 10rem;
   --border-radius: 4px;
   --nav-height: 100px;
   --nav-scroll-height: 70px;
