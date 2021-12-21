@@ -1,0 +1,25 @@
+.root {
+  background-color: var(--blue);
+  padding: 15px 0;
+  color: var(--white);
+  ul {
+    list-style-type: none;
+    display: flex;
+    li {
+      font-family: var(--font-mono);
+      padding: 7px 14px;
+      text-transform: capitalize;
+      font-size: var(--fz-xs);
+      span {
+        font-family: var(--font-mono);
+        color: var(--yellow);
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

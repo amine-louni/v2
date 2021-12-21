@@ -1,13 +1,14 @@
 .btn {
-  padding: 10px 30px;
+  padding: 15px 30px;
   font-size: var(--fz-md);
   cursor: pointer;
   background-color: transparent;
-
+  font-family: var(--font-mono);
   border: 1px solid var(--yellow);
   color: var(--yellow);
   border-radius: var(--border-radius);
   transition: var(--transition);
+  line-height: 1;
   &:hover {
     background-color: var(--yellow-transparent);
   }

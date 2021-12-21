@@ -1,13 +1,119 @@
 .hero {
   background-color: var(--blue);
-  height: 550px;
-  & > div {
-    height: 100%;
-  }
+  height: 95vh;
+  color: var(--white);
+  position: relative;
 }
-
+.container {
+  height: 100%;
+}
 .hello {
   color: var(--yellow);
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
+  margin-bottom: var(--spacing-xs);
+  span {
+    color: var(--yellow-dark);
+  }
+}
+
+.title {
+  font-size: var(--fz-huge);
+  font-weight: 800;
+  line-height: 0.9;
+  margin-bottom: var(--spacing-md);
+  color: var(--green);
+}
+.row {
+  align-items: center;
+  height: 100%;
+}
+
+.titlePart {
+  color: var(--yellow-light);
+}
+
+.text {
+  font-weight: 500;
+  margin-bottom: var(--spacing-xl);
+  color: var(--yellow-light);
+  font-size: var(--fz-xs);
+  width: 90%;
+}
+
+.col-photo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.zig1 {
+  position: absolute;
+  top: 1;
+  left: -40px;
+  bottom: 15%;
+  z-index: 10;
+}
+.zig2 {
+  position: absolute;
+  top: 1;
+  left: -30px;
+  bottom: 50%;
+  transform: rotate(-37deg);
+  z-index: 1;
+}
+.zig3 {
+  position: absolute;
+  top: 1;
+  right: -30px;
+  bottom: 50%;
+
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 38%;
+  right: 0;
+  bottom: 0;
+  background-color: var(--green);
+  flex-grow: 1;
+}
+
+.photo {
+  height: 30rem;
+  width: 30rem;
+  z-index: 1;
+  position: relative;
+  background-color: red;
+  border-radius: var(--border-radius);
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 15rem;
+    width: 15rem;
+    z-index: -1;
+
+    top: -7rem;
+    left: -7rem;
+    background-image: url("/square-yellow.svg");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    height: 15rem;
+    width: 15rem;
+    z-index: -1;
+
+    bottom: -7rem;
+    right: -7rem;
+    background-image: url("/square-blue.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
