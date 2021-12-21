@@ -1,10 +1,8 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import classes from "../styles/Home.module.scss";
-import ZigzagYellow from "../public/zigzag-yellow.svg";
-import ZigzagBlue from "../public/zigzag-blue.svg";
-import SquareBlue from "../public/square-blue.svg";
-import SquareYellow from "../public/square-yellow.svg";
+import AvatarShapes from "../public/photo-bg.svg";
+
 import Image from "next/image";
 
 export default function Home() {
@@ -41,19 +39,21 @@ export default function Home() {
                 <br />
               </div>
               <div className={`col-md-5 ${classes["col-photo"]}`}>
-                <div className={classes.zig1}>
-                  <Image src={ZigzagYellow} alt="zig-zag" />
+                <div className={classes["xs-overlay"]} />
+                <div className={classes.avatarShapes}>
+                  <Image src={AvatarShapes} alt="shapes" />
                 </div>
-                <div className={classes.zig2}>
-                  <Image src={ZigzagYellow} alt="zig-zag" />
-                </div>
-                <div className={classes.zig3}>
-                  <Image src={ZigzagBlue} alt="zig-zag" />
-                </div>
-
                 <div className={classes.photo}></div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className={classes.aboutSection}>
+          <div className="container">
+            <h2>
+              <span>01. </span>About
+            </h2>
           </div>
         </section>
       </main>

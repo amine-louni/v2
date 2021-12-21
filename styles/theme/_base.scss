@@ -13,6 +13,8 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: var(--default-font);
+  font-family: var(--font-sans);
   overscroll-behavior-y: none;
+  background-color: var(--white);
+  overflow-x: hidden;
 }
