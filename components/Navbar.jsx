@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "../styles/Navbar.module.scss";
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
   return (
     <nav className={classes.root}>
       <div className={`container ${classes.container}`}>
@@ -23,6 +24,15 @@ const Navbar = () => {
             <button className="btn btn-sm">Resume</button>
           </li>
         </ul>
+
+        <div
+          className={open ? classes["humburger-open"] : classes.humburger}
+          onClick={() => setOpen(!open)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
   );
