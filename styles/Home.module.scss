@@ -1,1 +1,13 @@
- 
+.hero {
+  background-color: var(--blue);
+  height: 550px;
+  & > div {
+    height: 100%;
+  }
+}
+
+.hello {
+  color: var(--yellow);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+}
