@@ -33,9 +33,11 @@
 }
 
 .humburger {
-  filter: none !important;
-  pointer-events: auto !important;
-  user-select: auto !important;
+  div {
+    filter: none !important;
+    pointer-events: auto !important;
+    user-select: auto !important;
+  }
   width: 4rem;
   height: 3rem;
   z-index: 15;
@@ -82,6 +84,11 @@
 }
 
 .humburger-open {
+  span {
+    filter: none !important;
+    pointer-events: auto !important;
+    user-select: auto !important;
+  }
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
