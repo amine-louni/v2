@@ -120,8 +120,8 @@
   width: min(75vw, 400px);
   height: 100vh;
   outline: 0px;
-  background-color: var(--blue);
-
+  background-color: var(--blue-light);
+  border-left: 2px solid var(--yellow);
   box-shadow: -10px 0px 30px -15px rgb(17, 14, 37);
 
   z-index: 10;
@@ -138,9 +138,8 @@
       font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
       margin-bottom: var(--spacing-md);
       color: var(--white);
-      text-align: center;
+
       span {
-        display: block;
         font-family: var(--font-mono);
         color: var(--yellow);
       }
