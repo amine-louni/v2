@@ -33,74 +33,18 @@
 }
 
 .humburger {
-  div {
-    filter: none !important;
-    pointer-events: auto !important;
-    user-select: auto !important;
-  }
-  width: 4rem;
-  height: 3rem;
-  z-index: 15;
-  display: none;
-  position: absolute;
-  right: 1.5rem;
-  top: 2rem;
-  @media only screen and (max-width: 992px) {
-    display: block;
-  }
-
-  & span {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: var(--green);
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: 0.25s ease-in-out;
-    -moz-transition: 0.25s ease-in-out;
-    -o-transition: 0.25s ease-in-out;
-    transition: 0.25s ease-in-out;
-  }
-
-  & span:nth-child(1) {
-    top: 0px;
-  }
-
-  & span:nth-child(2) {
-    top: 12px;
-    width: 90%;
-  }
-
-  & span:nth-child(3) {
-    top: 24px;
-    width: 70%;
-  }
-}
-
-.humburger-open {
   span {
     filter: none !important;
     pointer-events: auto !important;
     user-select: auto !important;
   }
-  filter: none !important;
-  pointer-events: auto !important;
-  user-select: auto !important;
-  position: absolute;
-  right: 1.5rem;
-  top: 2rem;
-
-  width: 4rem;
+  width: 3rem;
   height: 3rem;
   z-index: 15;
   display: none;
-
+  position: absolute;
+  right: 1.5rem;
+  top: 2rem;
   @media only screen and (max-width: 992px) {
     display: block;
   }
@@ -108,7 +52,7 @@
   & span {
     display: block;
     position: absolute;
-    height: 3px;
+    height: 2px;
     width: 100%;
     background: var(--green);
     border-radius: 9px;
@@ -123,22 +67,26 @@
     -o-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
   }
+
   & span:nth-child(1) {
     top: 0px;
   }
 
   & span:nth-child(2) {
-    top: 12px;
+    top: 7px;
+    width: 100%;
   }
 
   & span:nth-child(3) {
-    top: 24px;
+    top: 14px;
+    width: 70%;
   }
+}
+
+.humburger-open {
   & span:nth-child(1) {
     top: 12px;
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
+
     transform: rotate(135deg);
   }
 
@@ -149,9 +97,8 @@
 
   & span:nth-child(3) {
     top: 12px;
-    -webkit-transform: rotate(-135deg);
-    -moz-transform: rotate(-135deg);
-    -o-transform: rotate(-135deg);
+
+    width: 100%;
     transform: rotate(-135deg);
   }
 }
@@ -174,7 +121,8 @@
   height: 100vh;
   outline: 0px;
   background-color: var(--blue);
-  border: 3px solid var(--green);
+
+  box-shadow: -10px 0px 30px -15px rgb(17, 14, 37);
 
   z-index: 10;
   transform: translateX(75vw);

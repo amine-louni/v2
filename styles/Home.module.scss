@@ -53,8 +53,11 @@
   font-weight: 500;
   margin-bottom: var(--spacing-xl);
   color: var(--yellow-light);
-  font-size: var(--fz-xs);
+  font-size: var(--fz-md);
   width: 90%;
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+  }
 }
 
 .col-photo {

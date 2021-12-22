@@ -4,7 +4,7 @@ const Navbar = ({ open, setOpen }) => {
   return (
     <>
       <div
-        className={open ? classes["humburger-open"] : classes.humburger}
+        className={`${classes.humburger} ${open && classes["humburger-open"]}`}
         onClick={() => setOpen(!open)}
       >
         <span></span>
