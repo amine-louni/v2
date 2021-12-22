@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import classes from "../styles/Navbar.module.scss";
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
+const Navbar = ({ open, setOpen }) => {
   return (
     <>
       <div

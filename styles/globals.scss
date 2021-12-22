@@ -3,3 +3,18 @@
 @import "./theme/layout";
 @import "./theme/buttons";
 @import "./theme/typography";
+
+main {
+  transition: var(--transition);
+}
+
+.blurred {
+  overflow: hidden;
+  main div > * {
+    filter: blur(4px) brightness(1);
+    transition: var(--transition);
+
+    pointer-events: none;
+    user-select: none;
+  }
+}

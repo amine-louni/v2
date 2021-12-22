@@ -4,8 +4,17 @@ import classes from "../styles/Home.module.scss";
 import AvatarShapes from "../public/photo-bg.svg";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    if (open) {
+      document.querySelector("body").classList.add("blurred");
+    } else {
+      document.querySelector("body").classList.remove("blurred");
+    }
+  }, [open]);
   return (
     <>
       <Head>
@@ -15,8 +24,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Navbar />
+      <main className={open && classes.blurred}>
+        <Navbar open={open} setOpen={setOpen} />
         <section className={classes.hero}>
           <div className={classes.overlay} />
           <div className={`container ${classes.container}`}>

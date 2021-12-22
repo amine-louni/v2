@@ -33,6 +33,9 @@
 }
 
 .humburger {
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
   width: 4rem;
   height: 3rem;
   z-index: 15;
@@ -79,6 +82,9 @@
 }
 
 .humburger-open {
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
   position: absolute;
   right: 1.5rem;
   top: 2rem;
@@ -151,7 +157,9 @@
   align-items: center;
   position: fixed;
   border-radius: var(--border-radius);
-
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
   bottom: 0px;
   right: 0px;
   padding: 50px 10px;

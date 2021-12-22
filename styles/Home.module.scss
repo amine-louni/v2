@@ -119,16 +119,16 @@
   @media only screen and (max-width: 992px) {
     margin: 5rem auto;
   }
-  &::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: tomato;
-    left: 2rem;
-    top: 2rem;
-    z-index: -1;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   height: 100%;
+  //   width: 100%;
+  //   background-color: tomato;
+  //   left: 2rem;
+  //   top: 2rem;
+  //   z-index: -1;
+  // }
 }
 
 .section-title {
@@ -183,4 +183,8 @@
       line-height: 12px;
     }
   }
+}
+
+.blurred {
+  overflow: hidden;
 }
