@@ -1,6 +1,10 @@
 .root {
   background-color: var(--blue);
   padding: 15px 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
   color: var(--white);
   ul {
     list-style-type: none;
@@ -16,7 +20,7 @@
         color: var(--yellow);
       }
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
       display: none;
     }
   }
@@ -29,14 +33,21 @@
 }
 
 .humburger {
-  width: 5rem;
+  width: 4rem;
   height: 3rem;
+  z-index: 15;
+  display: none;
+  position: absolute;
+  right: 1.5rem;
+  top: 2rem;
+  @media only screen and (max-width: 992px) {
+    display: block;
+  }
 
-  position: relative;
   & span {
     display: block;
     position: absolute;
-    height: 5px;
+    height: 3px;
     width: 100%;
     background: var(--green);
     border-radius: 9px;
@@ -68,14 +79,23 @@
 }
 
 .humburger-open {
-  width: 5rem;
-  height: 3rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 2rem;
 
-  position: relative;
+  width: 4rem;
+  height: 3rem;
+  z-index: 15;
+  display: none;
+
+  @media only screen and (max-width: 992px) {
+    display: block;
+  }
+
   & span {
     display: block;
     position: absolute;
-    height: 5px;
+    height: 3px;
     width: 100%;
     background: var(--green);
     border-radius: 9px;
@@ -121,4 +141,52 @@
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
   }
+}
+
+.aside {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  border-radius: var(--border-radius);
+
+  bottom: 0px;
+  right: 0px;
+  padding: 50px 10px;
+  width: min(75vw, 400px);
+  height: 100vh;
+  outline: 0px;
+  background-color: var(--blue);
+  border: 3px solid var(--green);
+
+  z-index: 10;
+  transform: translateX(75vw);
+  visibility: hidden;
+  transition: var(--transition);
+  ul {
+    list-style-type: none;
+
+    li {
+      font-family: var(--font-mono);
+      padding: 7px 14px;
+      text-transform: capitalize;
+      font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
+      margin-bottom: var(--spacing-md);
+      color: var(--white);
+      text-align: center;
+      span {
+        display: block;
+        font-family: var(--font-mono);
+        color: var(--yellow);
+      }
+    }
+  }
+}
+
+.aside-open {
+  transform: translateX(0vw);
+  visibility: visible;
+  transition: var(--transition);
 }

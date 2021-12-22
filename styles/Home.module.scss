@@ -4,8 +4,17 @@
 
   color: var(--white);
   position: relative;
-  @media only screen and (max-width: 768px) {
+  .main-col {
+    display: flex;
+    align-items: center;
+  }
+  @media only screen and (max-width: 992px) {
     height: auto;
+    .main-col {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+    }
   }
 }
 .container {
@@ -19,7 +28,7 @@
   span {
     color: var(--yellow-dark);
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     margin-top: 5rem;
   }
 }
@@ -53,7 +62,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     justify-content: center;
     margin-top: 4rem;
   }
@@ -66,7 +75,7 @@
   @media only screen and (max-width: 992px) {
     width: 37rem;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     display: none;
   }
 }
@@ -80,7 +89,7 @@
   overflow: hidden;
   flex-grow: 1;
   border-top-left-radius: var(--border-radius);
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     display: none;
   }
 }
@@ -94,7 +103,7 @@
   top: 0;
   left: -7px;
   display: none;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     display: block;
   }
 }
@@ -107,7 +116,7 @@
   background-color: gray;
   border-radius: var(--border-radius);
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     margin: 5rem auto;
   }
   &::before {
