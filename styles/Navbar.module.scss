@@ -14,7 +14,11 @@
       font-family: var(--font-mono);
       padding: 7px 14px;
       text-transform: capitalize;
+      cursor: pointer;
       font-size: var(--fz-xs);
+      &:hover {
+        color: var(--yellow);
+      }
       span {
         font-family: var(--font-mono);
         color: var(--yellow);

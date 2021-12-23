@@ -216,3 +216,27 @@
 .blurred {
   overflow: hidden;
 }
+
+.design-col {
+}
+
+.form-1 {
+  position: relative;
+  left: var(--spacing-xxl);
+  width: var(--spacing-xxl);
+  margin-bottom: var(--spacing-xl);
+  @media only screen and (max-width: 992px) {
+    display: none;
+  }
+}
+.form-2 {
+  position: relative;
+  top: var(--spacing-md);
+  left: var(--spacing-xxl);
+
+  width: 16rem;
+  margin-bottom: var(--spacing-xl);
+  @media only screen and (max-width: 992px) {
+    display: none;
+  }
+}
