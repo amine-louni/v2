@@ -3,7 +3,9 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 export default function Jobs() {
   return (
-    <section className={classes["section-dark"]}>
+    <section
+      className={`${classes["section-dark"]} ${classes["jobs-section"]}`}
+    >
       <h3 className={classes["bg-heading-light"]}>Experience</h3>
       <div className="container">
         <h2
@@ -39,13 +41,7 @@ export default function Jobs() {
                       <a href="#">@Goldencorp</a>
                     </h3>
                     <small>October 2020 - Present</small>
-                    <p>
-                      I moved to a startup environment, where I had the chance
-                      to work on more challenging tasks, I opened up in new
-                      technologies and approaches like CI/CD and DevOps
-                      automation, as a Full-stack developer my responsibilities
-                      include:
-                    </p>
+
                     <ul>
                       <li>
                         Developing the frontend using react and the latest
@@ -71,13 +67,7 @@ export default function Jobs() {
                       <a href="#">@Orcloud</a>
                     </h3>
                     <small>September 2019 - October 2020</small>
-                    <p>
-                      Our main goal is to help clients to build their online
-                      presence by building websites using ORCLOUD cms , which is
-                      based on laravel framework, I had the chance to implement
-                      my front end skills to help reach the main objective, as a
-                      front end developer my duties were:
-                    </p>
+
                     <ul>
                       <li>
                         Collaborate with the project manager to create a brand

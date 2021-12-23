@@ -29,12 +29,15 @@ main {
   display: flex;
   margin-top: var(--spacing-xl);
   width: 100%;
+  height: 20rem;
+  background-color: #fff;
 
-  color: white;
+  color: var(--white);
   background: var(--blue);
   transition: var(--transition);
   @media only screen and (max-width: 992px) {
     flex-direction: column;
+    height: 25rem;
   }
 }
 
@@ -58,14 +61,16 @@ main {
   width: 200px;
   padding: 1.5rem 0 1.5rem 1.5rem;
   cursor: pointer;
-  border-left: 2px solid #444;
+  border-left: 2px solid var(--white);
   font-size: 1rem;
   transition: background 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   & p {
     font-family: var(--font-mono);
   }
   @media only screen and (max-width: 992px) {
+    text-align: center;
     padding: 10px 30px;
+    border-left: none;
   }
   & p {
     font-size: var(--fz-md);
@@ -86,6 +91,7 @@ main {
   @media only screen and (max-width: 992px) {
     border-left: none;
     border-bottom: 2px solid var(--green);
+    background-color: transparent !important;
   }
 }
 
@@ -122,6 +128,7 @@ main {
     font-size: var(--fz-xs);
   }
   & ul {
+    margin-top: var(--spacing-md);
     list-style: none;
 
     & li {
@@ -137,5 +144,23 @@ main {
         left: -1rem;
       }
     }
+  }
+  @media only screen and (max-width: 992px) {
+    padding-left: 0;
+  }
+}
+.react-tabs__tab-panel--selected {
+  animation: slideeffect 500ms ease-out;
+  opacity: 1;
+}
+
+@keyframes slideeffect {
+  0% {
+    opacity: 0;
+    transform: translateX(3%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
