@@ -222,7 +222,7 @@
 
 .form-1 {
   position: relative;
-  left: var(--spacing-xxl);
+  left: 0;
   width: var(--spacing-xxl);
   margin-bottom: var(--spacing-xl);
   @media only screen and (max-width: 992px) {
@@ -240,3 +240,5 @@
     display: none;
   }
 }
+
+// Jobs

@@ -24,3 +24,118 @@ main {
     margin-bottom: var(--spacing-md);
   }
 }
+
+.react-tabs {
+  display: flex;
+  margin-top: var(--spacing-xl);
+  width: 100%;
+
+  color: white;
+  background: var(--blue);
+  transition: var(--transition);
+  @media only screen and (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+
+  @media only screen and (max-width: 992px) {
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: var(--spacing-md);
+  }
+}
+
+.react-tabs__tab {
+  list-style: none;
+  width: 200px;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  & p {
+    font-family: var(--font-mono);
+  }
+  @media only screen and (max-width: 992px) {
+    padding: 10px 30px;
+  }
+  & p {
+    font-size: var(--fz-md);
+  }
+  &:hover {
+    background-color: var(--yellow-transparent);
+  }
+}
+
+.react-tabs__tab--selected {
+  background-color: var(--yellow-transparent);
+
+  border-left: 2px solid var(--yellow);
+  border-radius: var(--border-radius);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: white;
+
+  @media only screen and (max-width: 992px) {
+    border-left: none;
+    border-bottom: 2px solid var(--yellow);
+  }
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.panel-content {
+  padding-left: var(--spacing-md);
+  & h3 {
+    & .title {
+      margin-right: var(--spacing-xs);
+      color: var(--white);
+      font-weight: 600;
+    }
+    & a {
+      text-decoration: none;
+      color: var(--green);
+      font-weight: 600;
+      font-family: var(--font-mono);
+    }
+  }
+
+  & small {
+    font-family: var(--font-mono);
+  }
+  & p {
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--fz-xs);
+  }
+  & ul {
+    list-style: none;
+
+    & li {
+      font-size: var(--fz-xs);
+      padding-left: var(--spacing-md);
+      margin-bottom: var(--spacing-xs);
+      position: relative;
+      &::before {
+        content: "▶";
+        font-size: 0.7rem;
+        color: var(--green);
+        position: relative;
+        left: -1rem;
+      }
+    }
+  }
+}
