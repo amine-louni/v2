@@ -58,6 +58,7 @@ main {
   width: 200px;
   padding: 1.5rem 0 1.5rem 1.5rem;
   cursor: pointer;
+  border-left: 2px solid #444;
   font-size: 1rem;
   transition: background 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   & p {
@@ -76,16 +77,15 @@ main {
 
 .react-tabs__tab--selected {
   background-color: var(--yellow-transparent);
-
-  border-left: 2px solid var(--yellow);
+  color: var(--green);
+  border-left: 2px solid var(--green);
   border-radius: var(--border-radius);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  color: white;
 
   @media only screen and (max-width: 992px) {
     border-left: none;
-    border-bottom: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--green);
   }
 }
 

@@ -19,10 +19,10 @@ const Navbar = ({ open, setOpen }) => {
               <span>01.</span> about
             </li>
             <li>
-              <span>02.</span> work
+              <span>02.</span> experience
             </li>
             <li>
-              <span>03.</span> experience
+              <span>03.</span> work
             </li>
             <li>
               <span>04.</span> contact
