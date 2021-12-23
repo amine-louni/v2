@@ -18,3 +18,9 @@ main {
     user-select: none;
   }
 }
+
+.mb-lg {
+  @media only screen and (max-width: 992px) {
+    margin-bottom: var(--spacing-md);
+  }
+}

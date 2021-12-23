@@ -5,6 +5,9 @@ import AvatarShapes from "../public/photo-bg.svg";
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Hero from "../components/sections/Hero";
+import About from "../components/sections/About";
+import Jobs from "../components/sections/Jobs";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -26,91 +29,11 @@ export default function Home() {
 
       <main className={open && classes.blurred}>
         <Navbar open={open} setOpen={setOpen} />
-        <section className={classes.hero}>
-          <div className={classes.overlay} />
-          <div className={`container ${classes.container}`}>
-            <div className={`row ${classes.row}`}>
-              <div className={`col-lg-7 ${classes["main-col"]}`}>
-                <div>
-                  <h4 className={classes.hello}>
-                    <span>▶</span> Hy my name is Amine Louni
-                  </h4>
-                  <h4 className={classes.title}>
-                    Full Stack
-                    <div className={classes.titlePart}>Developer.</div>
-                  </h4>
-                  <p className={classes.text}>
-                    Since beginning my journey as a software engineer , I
-                    &apos;ve done remote work for agencies, consulted for
-                    startups, and collaborated with talented people to create
-                    digital products for both business and consumer use.
-                  </p>
-                  <button className="btn">Check out my works</button>
-                  <br />
-                </div>
-              </div>
-              <div className={`col-lg-5 ${classes["col-photo"]}`}>
-                <div className={classes["xs-overlay"]} />
-                <div className={classes.avatarShapes}>
-                  <Image src={AvatarShapes} alt="shapes" />
-                </div>
-                <div className={classes.photo}></div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Hero />
 
-        <section className={classes.aboutSection}>
-          <h3 className={classes["bg-heading"]}>About</h3>
-          <div className="container">
-            <h2
-              className={`${classes["section-title"]} ${classes["section-title-dark"]}`}
-            >
-              <span>01. </span>About Me
-            </h2>
+        <About />
 
-            <div className="row">
-              <div className="col-lg-6">
-                <h3>Software enginnering</h3>
-                <p>
-                  I solve clients problems using digital solutions , Another
-                  reason a software engineering career is a great choice for me
-                  because the field is so broad and encompasses a variety of
-                  roles related to both computer applications and systems.
-                  <p>
-                    Here are a few technologies I’ve been working with recently:
-                  </p>
-                </p>
-                <ul className={classes.skillsList}>
-                  <li>JavaScript (ES6+)</li>
-                  <li>React</li>
-                  <li>Node.js</li>
-                  <li>TypeScript</li>
-                  <li>TypeScript</li>
-                  <li>React native</li>
-                </ul>
-              </div>
-
-              <div className="col-lg-6">
-                <h3>Passion for design</h3>
-                <p>
-                  Being a Web designer enables you to not only work with
-                  websites every day but also to shape the way people interact
-                  with the Web. Plus, these days, a customer&apos;s first
-                  impression of a company is often through its website rather
-                  than print materials such as business cards or marketing
-                  mailings.
-                </p>
-                <p>Here are a few tools I’ve been working with recently:</p>
-                <ul className={classes.skillsList}>
-                  <li>Figma</li>
-                  <li>Adobe illustrator</li>
-                  <li>Adobe XD</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Jobs />
       </main>
 
       <footer>footer</footer>

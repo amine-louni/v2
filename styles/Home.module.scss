@@ -143,11 +143,28 @@
       font-size: var(--fz-xl);
     }
   }
+  &-light {
+    color: var(--white);
+
+    & span {
+      color: var(--green);
+      font-family: var(--font-mono);
+      font-size: var(--fz-xl);
+    }
+  }
 }
-.aboutSection {
+
+.section {
   padding: var(--spacing-xxl) 0;
   position: relative;
   overflow-x: hidden;
+  &-dark {
+    padding: var(--spacing-xxl) 0;
+    position: relative;
+    overflow-x: hidden;
+    background-color: var(--blue);
+    color: var(--white);
+  }
 }
 
 .bg-heading {
@@ -159,6 +176,16 @@
   margin: 0;
   padding: 0;
   line-height: 0;
+  &-light {
+    color: var(--yellow-transparent);
+    position: absolute;
+    top: 6rem;
+    right: -1rem;
+    font-size: 17rem;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
 }
 
 .skillsList {
