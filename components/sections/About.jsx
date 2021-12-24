@@ -7,10 +7,10 @@ import circlesagBlue from "./../../public/circles-blue.svg";
 export default function About() {
   return (
     <section className={classes.section}>
-      <h3 className={classes["bg-heading"]}>About</h3>
+      <h3 className={classes["bg-heading-light"]}>About</h3>
       <div className="container">
         <h2
-          className={`${classes["section-title"]} ${classes["section-title-dark"]}`}
+          className={`${classes["section-title"]} ${classes["section-title-light"]}`}
         >
           <span>01. </span>About Me
         </h2>

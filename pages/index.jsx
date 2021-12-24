@@ -8,6 +8,7 @@ import Hero from "../components/sections/Hero";
 import About from "../components/sections/About";
 import Jobs from "../components/sections/Jobs";
 import Works from "../components/sections/Works";
+import Contact from "../components/sections/Contact";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -35,6 +36,8 @@ export default function Home() {
         <Jobs />
 
         <Works />
+
+        <Contact />
       </main>
       <footer>footer</footer>
     </>

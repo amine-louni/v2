@@ -42,6 +42,10 @@
   line-height: 0.9;
   margin-bottom: var(--spacing-md);
   color: var(--white);
+
+  &-center {
+    text-align: center;
+  }
 }
 .row {
   align-items: center;

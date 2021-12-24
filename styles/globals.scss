@@ -4,7 +4,12 @@
 @import "./theme/buttons";
 @import "./theme/typography";
 @import "./sections/projects.scss";
+@import "./sections/contact.scss";
 
+body {
+  background-color: var(--blue);
+  color: var(--white);
+}
 main {
   transition: var(--transition);
 }

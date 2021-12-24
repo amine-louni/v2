@@ -1,0 +1,13 @@
+.title {
+  &-center {
+    text-align: center;
+    &__intro {
+      font-family: var(--font-mono);
+      font-weight: 500;
+      color: var(--blue);
+      & span {
+        font-family: inherit;
+      }
+    }
+  }
+}

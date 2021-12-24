@@ -8,10 +8,10 @@ import { FiFolder, FiExternalLink, FiGithub } from "react-icons/fi";
 export default function Works() {
   return (
     <section className={classes.section}>
-      <h3 className={classes["bg-heading"]}>Works</h3>
+      <h3 className={classes["bg-heading-light"]}>Works</h3>
       <div className="container">
         <h2
-          className={`${classes["section-title"]} ${classes["section-title-dark"]}`}
+          className={`${classes["section-title"]} ${classes["section-title-light"]}`}
         >
           <span>03. </span>Some Things I’ve Built
         </h2>
