@@ -3,7 +3,6 @@
   font-size: var(--fz-md);
   cursor: pointer;
   background-color: transparent;
-  font-family: var(--font-mono);
   border: 1px solid var(--green);
   color: var(--green);
   border-radius: var(--border-radius);
@@ -22,6 +21,7 @@
     font-size: var(--fz-xs);
   }
   &__text {
+    font-family: var(--font-mono);
     margin-right: var(--spacing-xs);
   }
 }

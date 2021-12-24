@@ -30,6 +30,9 @@
       }
     }
   }
+  &__icon {
+    color: var(--green);
+  }
   &__content {
     padding: var(--spacing-xl);
     background-color: var(--blue);
@@ -42,7 +45,7 @@
   &__skills {
     display: flex;
     margin-bottom: var(--spacing-xs);
-    margin-bottom: var(--spacing-md);
+
     flex-wrap: wrap;
     &__tag {
       margin-bottom: 4px;
@@ -55,16 +58,17 @@
   &__description {
     font-size: var(--fz-xs);
     margin-bottom: var(--spacing-md);
+    color: var(--white);
   }
 
   &__cta {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
   }
   &__link {
-    color: var(--green);
+    color: #ccc;
     display: inline-block;
 
     padding: var(--spacing-xs);
@@ -94,6 +98,7 @@
     }
     &:hover {
       background-color: transparent;
+      color: var(--green);
       &::after {
         transform: scale(1);
       }
