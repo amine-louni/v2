@@ -17,11 +17,11 @@
       cursor: pointer;
       font-size: var(--fz-xs);
       &:hover {
-        color: var(--yellow);
+        color: var(--green);
       }
       span {
         font-family: var(--font-mono);
-        color: var(--yellow);
+        color: var(--green);
       }
     }
     @media only screen and (max-width: 992px) {
@@ -125,7 +125,7 @@
   height: 100vh;
   outline: 0px;
   background-color: var(--blue-light);
-  border-left: 2px solid var(--yellow);
+  border-left: 2px solid var(--green);
   box-shadow: -10px 0px 30px -15px rgb(17, 14, 37);
 
   z-index: 10;
@@ -145,7 +145,7 @@
 
       span {
         font-family: var(--font-mono);
-        color: var(--yellow);
+        color: var(--green);
       }
     }
   }

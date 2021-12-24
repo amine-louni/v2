@@ -1,0 +1,111 @@
+.project {
+  &__title {
+    font-weight: 600;
+  }
+  margin-bottom: var(--spacing-md);
+
+  &__img {
+    transition: var(--transition);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    filter: blur(1px);
+    position: relative;
+    height: 100%;
+    @media only screen and (max-width: 992px) {
+      display: none;
+    }
+    &::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: rgba(#ccf381, 0.7);
+      position: absolute;
+
+      transition: var(--transition);
+    }
+    &:hover {
+      filter: none;
+      &::after {
+        opacity: 0;
+      }
+    }
+  }
+  &__content {
+    padding: var(--spacing-xl);
+    background-color: var(--blue);
+    color: var(--yellow-light);
+
+    border-radius: var(--border-radius);
+    position: relative;
+    top: var(--spacing-md);
+  }
+  &__skills {
+    display: flex;
+    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+    flex-wrap: wrap;
+    &__tag {
+      margin-bottom: 4px;
+      padding-right: var(--spacing-md);
+      font-family: var(--font-mono);
+      font-size: var(--fz-xs);
+      color: var(--yellow-dark);
+    }
+  }
+  &__description {
+    font-size: var(--fz-xs);
+    margin-bottom: var(--spacing-md);
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-xs);
+  }
+  &__link {
+    color: var(--green);
+    display: inline-block;
+
+    padding: var(--spacing-xs);
+
+    transition: var(--transition);
+
+    border-radius: var(--spacing-xs);
+    height: 4rem;
+    width: 4rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--blue-transparent);
+    position: relative;
+    &::after {
+      content: "";
+      transition: var(--transition);
+      position: absolute;
+      background-color: var(--yellow-transparent);
+      height: 100%;
+      width: 100%;
+
+      top: 0;
+      border-radius: var(--spacing-xs);
+      transform: scale(0);
+    }
+    &:hover {
+      background-color: transparent;
+      &::after {
+        transform: scale(1);
+      }
+    }
+  }
+  &-alt {
+    & .project__content {
+      z-index: 2;
+
+      @media only screen and (max-width: 992px) {
+        right: 0;
+      }
+    }
+  }
+}

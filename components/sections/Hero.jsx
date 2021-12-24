@@ -2,6 +2,7 @@ import classes from "../../styles/Home.module.scss";
 import AvatarShapes from "../../public/photo-bg.svg";
 
 import Image from "next/image";
+import { FiArrowDown, FiFolder } from "react-icons/fi";
 
 export default function Hero() {
   return (
@@ -16,8 +17,8 @@ export default function Hero() {
                   <span>▶</span> Hy my name is Amine Louni
                 </h4>
                 <h4 className={classes.title}>
-                  Full Stack
-                  <div className={classes.titlePart}>Developer.</div>
+                  Full Stack <br /> Developer
+                  <span className={classes.titlePart}>.</span>
                 </h4>
                 <p className={classes.text}>
                   Since beginning my journey as a software engineer , I &apos;ve
@@ -25,7 +26,9 @@ export default function Hero() {
                   collaborated with talented people to create digital products
                   for both business and consumer use.
                 </p>
-                <button className="btn">Check out my works</button>
+                <button className="btn">
+                  <span className="btn__text">Check out my works</span>{" "}
+                </button>
                 <br />
               </div>
             </div>

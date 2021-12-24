@@ -4,13 +4,15 @@
   cursor: pointer;
   background-color: transparent;
   font-family: var(--font-mono);
-  border: 1px solid var(--yellow);
-  color: var(--yellow);
+  border: 1px solid var(--green);
+  color: var(--green);
   border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
   transition: var(--transition);
   line-height: 1;
   &:hover {
-    background-color: var(--yellow-transparent);
+    background-color: var(--green-transparent);
   }
   &::first-letter {
     text-transform: uppercase;
@@ -18,5 +20,8 @@
   &-sm {
     padding: 10px 20px;
     font-size: var(--fz-xs);
+  }
+  &__text {
+    margin-right: var(--spacing-xs);
   }
 }

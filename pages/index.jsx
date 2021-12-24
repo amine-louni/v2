@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Hero from "../components/sections/Hero";
 import About from "../components/sections/About";
 import Jobs from "../components/sections/Jobs";
+import Works from "../components/sections/Works";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -32,6 +33,8 @@ export default function Home() {
         <About />
 
         <Jobs />
+
+        <Works />
       </main>
       <footer>footer</footer>
     </>

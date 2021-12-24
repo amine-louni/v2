@@ -1,6 +1,6 @@
 .hero {
   background-color: var(--blue);
-  height: 550px;
+  height: 95vh;
 
   color: var(--white);
   position: relative;
@@ -25,9 +25,11 @@
   color: var(--yellow);
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+  font-weight: 400;
+
   span {
-    color: var(--yellow-dark);
+    color: var(--green-dark);
   }
   @media only screen and (max-width: 992px) {
     margin-top: 5rem;
@@ -39,7 +41,7 @@
   font-weight: 800;
   line-height: 0.9;
   margin-bottom: var(--spacing-md);
-  color: var(--green);
+  color: var(--white);
 }
 .row {
   align-items: center;
@@ -47,13 +49,13 @@
 }
 
 .titlePart {
-  color: var(--yellow-light);
+  color: var(--green-light);
 }
 
 .text {
   font-weight: 500;
   margin-bottom: var(--spacing-xl);
-  color: var(--yellow-light);
+  color: var(--white);
   font-size: var(--fz-xs);
   width: 90%;
 }
@@ -138,7 +140,7 @@
     color: var(--dark);
 
     & span {
-      color: var(--yellow-dark);
+      color: var(--green-dark);
       font-family: var(--font-mono);
       font-size: var(--fz-xl);
     }
@@ -177,7 +179,7 @@
   padding: 0;
   line-height: 0;
   &-light {
-    color: var(--yellow-transparent);
+    color: var(--green-transparent);
     position: absolute;
     top: 6rem;
     right: -1rem;
@@ -206,7 +208,7 @@
       content: "▶";
       position: absolute;
       left: 0px;
-      color: var(--yellow-dark);
+      color: var(--green-dark);
       font-size: var(--fz-xxs);
       line-height: 12px;
     }
@@ -243,4 +245,17 @@
 
 // Jobs
 .jobs-section {
+}
+
+// projects
+
+.project {
+  h3 {
+    font-weight: 600;
+  }
+
+  & .project-skills {
+    display: flex;
+    background-color: red;
+  }
 }
