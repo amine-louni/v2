@@ -15,6 +15,11 @@ body {
   font-size: 1.6rem;
   font-family: var(--font-sans);
   overscroll-behavior-y: none;
-  background-color: var(--white);
+  color: var(--stale);
+
   overflow-x: hidden;
+}
+
+p {
+  color: var(--stale);
 }

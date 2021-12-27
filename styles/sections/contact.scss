@@ -1,13 +1,28 @@
 .title {
+  margin-bottom: var(--spacing-md);
   &-center {
     text-align: center;
+    & h2 {
+      margin-bottom: var(--spacing-md);
+    }
     &__intro {
       font-family: var(--font-mono);
       font-weight: 500;
-      color: var(--blue);
+      color: var(--green);
+
       & span {
         font-family: inherit;
       }
     }
+
+    &__main {
+      font-size: 4rem;
+    }
   }
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-xxl);
 }

@@ -2,7 +2,6 @@
   background-color: var(--blue);
   height: 95vh;
 
-  color: var(--white);
   position: relative;
   .main-col {
     display: flex;
@@ -59,7 +58,7 @@
 .text {
   font-weight: 500;
   margin-bottom: var(--spacing-xl);
-  color: var(--white);
+  color: var(--stale);
   font-size: var(--fz-xs);
   width: 90%;
 }
@@ -174,20 +173,12 @@
 }
 
 .bg-heading {
-  color: var(--blue-transparent);
-  position: absolute;
-  top: 6rem;
-  right: -1rem;
-  font-size: 17rem;
-  margin: 0;
-  padding: 0;
-  line-height: 0;
   &-light {
     color: var(--green-transparent);
     position: absolute;
-    top: 6rem;
-    right: -1rem;
-    font-size: 17rem;
+    top: 7rem;
+    right: -3rem;
+    font-size: 13rem;
     margin: 0;
     padding: 0;
     line-height: 0;
@@ -221,9 +212,6 @@
 
 .blurred {
   overflow: hidden;
-}
-
-.design-col {
 }
 
 .form-1 {

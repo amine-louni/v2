@@ -33,7 +33,7 @@ main {
 
 .react-tabs {
   display: flex;
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-xxl);
   width: 100%;
 
   background-color: #fff;
@@ -87,11 +87,14 @@ main {
 
 .react-tabs__tab--selected {
   background-color: var(--green-transparent);
-  color: var(--green);
   border-left: 2px solid var(--green);
   border-radius: var(--border-radius);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+
+  & p {
+    color: var(--green);
+  }
 
   @media only screen and (max-width: 992px) {
     border-left: none;

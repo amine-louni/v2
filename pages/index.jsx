@@ -39,7 +39,11 @@ export default function Home() {
 
         <Contact />
       </main>
-      <footer>footer</footer>
+      <footer className="footer">
+        <div className="container text-center">
+          <p>Built With Next.js by Amine Louni</p>
+        </div>
+      </footer>
     </>
   );
 }

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import classes from "../../styles/Home.module.scss";
-import squareBlue from "./../../public/square-blue.svg";
-import zigZagBlue from "./../../public/zigzag-blue.svg";
+import greenSquares from "./../../public/green-squares.svg";
 import circlesagBlue from "./../../public/circles-blue.svg";
 
 export default function About() {
@@ -43,7 +42,7 @@ export default function About() {
 
           <div className={`col-lg-6 ${classes["design-col"]}`}>
             <figure className={classes["form-1"]}>
-              <Image src={squareBlue} alt="zig zag" />
+              <Image src={greenSquares} alt="zig zag" />
             </figure>
             <h3>Passion for design</h3>
             <p>

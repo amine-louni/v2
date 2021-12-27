@@ -18,3 +18,24 @@
 .text-center {
   text-align: center;
 }
+.section {
+  padding: var(--spacing-xxl) 0;
+  position: relative;
+  overflow-x: hidden;
+  &-dark {
+    padding: var(--spacing-xxl) 0;
+    position: relative;
+    overflow-x: hidden;
+    background-color: var(--blue);
+    color: var(--white);
+  }
+}
+
+.footer {
+  padding: var(--spacing-xl) 0;
+  color: var(--stale);
+  & p {
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+  }
+}
