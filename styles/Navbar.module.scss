@@ -1,7 +1,7 @@
 .root {
   background-color: var(--blue);
   padding: 15px 0;
-  position: absolute;
+  position: fixed;
   left: 0;
   width: 100%;
   z-index: 1;
@@ -14,6 +14,10 @@
       font-family: var(--font-mono);
       padding: 7px 14px;
       text-transform: capitalize;
+      & .active {
+        background-color: red;
+        color: var(--green);
+      }
       cursor: pointer;
       font-size: var(--fz-xs);
       &:hover {
@@ -46,7 +50,7 @@
   height: 3rem;
   z-index: 15;
   display: none;
-  position: absolute;
+  position: fixed;
   right: 1.5rem;
   top: 2rem;
   @media only screen and (max-width: 992px) {
@@ -124,7 +128,7 @@
   width: min(75vw, 400px);
   height: 100vh;
   outline: 0px;
-  background-color: var(--blue-light);
+  background-color: var(--blue);
   border-left: 2px solid var(--green);
   box-shadow: -10px 0px 30px -15px rgb(17, 14, 37);
 

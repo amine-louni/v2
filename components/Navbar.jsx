@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-scroll";
 import classes from "../styles/Navbar.module.scss";
 const Navbar = ({ open, setOpen }) => {
