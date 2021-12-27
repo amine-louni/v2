@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import classes from "../styles/Navbar.module.scss";
 const Navbar = ({ open, setOpen }) => {
   return (
@@ -16,16 +17,52 @@ const Navbar = ({ open, setOpen }) => {
           <h4>Amine Louni</h4>
           <ul>
             <li>
-              <span>01.</span> about
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <span>01.</span> about
+              </Link>
             </li>
             <li>
-              <span>02.</span> experience
+              <Link
+                activeClass="active"
+                to="jobs"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <span>02.</span> experience
+              </Link>
             </li>
             <li>
-              <span>03.</span> work
+              <Link
+                activeClass="active"
+                to="works"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <span>03.</span> works
+              </Link>
             </li>
             <li>
-              <span>04.</span> contact
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <span>04.</span> contact
+              </Link>
             </li>
 
             <li>
@@ -37,16 +74,52 @@ const Navbar = ({ open, setOpen }) => {
       <aside className={`${classes.aside} ${open && classes["aside-open"]}`}>
         <ul>
           <li>
-            <span>01.</span> about
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <span>01.</span> about
+            </Link>
           </li>
           <li>
-            <span>02.</span> work
+            <Link
+              activeClass="active"
+              to="jobs"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <span>02.</span> experience
+            </Link>
           </li>
           <li>
-            <span>03.</span> experience
+            <Link
+              activeClass="active"
+              to="works"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <span>03.</span> works
+            </Link>
           </li>
           <li>
-            <span>04.</span> contact
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <span>04.</span> contact
+            </Link>
           </li>
 
           <li>

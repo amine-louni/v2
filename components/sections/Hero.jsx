@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="overlay" />
       <div className={`container`}>
         <div className={`row  `}>
-          <div className={`col-lg-7  `}>
+          <div className={`col-lg-7  main-col `}>
             <div>
               <h4 className={"hello"}>
                 <span>▶</span> Hy my name is Amine Louni

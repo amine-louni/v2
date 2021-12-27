@@ -2,7 +2,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 export default function Jobs() {
   return (
-    <section className="section-dark jobs-section">
+    <section id="jobs" className="section-dark jobs-section">
       <h3 className="bg-heading-light">Experience</h3>
       <div className="container">
         <h2 className="section-title section-title-light">

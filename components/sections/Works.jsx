@@ -2,7 +2,7 @@ import { FiFolder, FiExternalLink, FiGithub } from "react-icons/fi";
 
 export default function Works() {
   return (
-    <section className="section">
+    <section id="works" className="section">
       <h3 className="bg-heading-light">Works</h3>
       <div className="container">
         <h2 className="section-title section-title-light">

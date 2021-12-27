@@ -4,7 +4,7 @@ import circlesagBlue from "./../../public/circles-blue.svg";
 
 export default function About() {
   return (
-    <section className="section">
+    <section className="section" id="about">
       <h3 className="bg-heading-light">About</h3>
       <div className="container">
         <h2 className={"section-title section-title-light"}>
