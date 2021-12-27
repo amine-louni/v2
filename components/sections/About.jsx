@@ -1,16 +1,13 @@
 import Image from "next/image";
-import classes from "../../styles/Home.module.scss";
 import greenSquares from "./../../public/green-squares.svg";
 import circlesagBlue from "./../../public/circles-blue.svg";
 
 export default function About() {
   return (
-    <section className={classes.section}>
-      <h3 className={classes["bg-heading-light"]}>About</h3>
+    <section className="section">
+      <h3 className="bg-heading-light">About</h3>
       <div className="container">
-        <h2
-          className={`${classes["section-title"]} ${classes["section-title-light"]}`}
-        >
+        <h2 className={"section-title section-title-light"}>
           <span>01. </span>About Me
         </h2>
 
@@ -26,7 +23,7 @@ export default function About() {
                 Here are a few technologies I’ve been working with recently:
               </p>
             </p>
-            <ul className={classes.skillsList}>
+            <ul className="skillsList">
               <li>JavaScript (ES6+)</li>
               <li>React</li>
               <li>Node.js</li>
@@ -35,13 +32,13 @@ export default function About() {
               <li>React native</li>
             </ul>
 
-            <figure className={classes["form-2"]}>
+            <figure className="form-2">
               <Image src={circlesagBlue} alt="zig zag" />
             </figure>
           </div>
 
-          <div className={`col-lg-6 ${classes["design-col"]}`}>
-            <figure className={classes["form-1"]}>
+          <div className={"col-lg-6  design-col"}>
+            <figure className="form-1">
               <Image src={greenSquares} alt="zig zag" />
             </figure>
             <h3>Passion for design</h3>
@@ -53,7 +50,7 @@ export default function About() {
               business cards or marketing mailings.
             </p>
             <p>Here are a few tools I’ve been working with recently:</p>
-            <ul className={classes.skillsList}>
+            <ul className="skillsList">
               <li>Figma</li>
               <li>Adobe illustrator</li>
               <li>Adobe XD</li>

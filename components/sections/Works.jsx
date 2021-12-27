@@ -1,18 +1,11 @@
-import Image from "next/image";
-import classes from "../../styles/Home.module.scss";
-import squareBlue from "./../../public/square-blue.svg";
-import zigZagBlue from "./../../public/zigzag-blue.svg";
-import circlesagBlue from "./../../public/circles-blue.svg";
 import { FiFolder, FiExternalLink, FiGithub } from "react-icons/fi";
 
 export default function Works() {
   return (
-    <section className={classes.section}>
-      <h3 className={classes["bg-heading-light"]}>Works</h3>
+    <section className="section">
+      <h3 className="bg-heading-light">Works</h3>
       <div className="container">
-        <h2
-          className={`${classes["section-title"]} ${classes["section-title-light"]}`}
-        >
+        <h2 className="section-title section-title-light">
           <span>03. </span>Some Things I’ve Built
         </h2>
 

@@ -1,0 +1,139 @@
+.hero {
+  background-color: var(--blue);
+  height: 95vh;
+
+  position: relative;
+  .main-col {
+    display: flex;
+    align-items: center;
+  }
+  @media only screen and (max-width: 992px) {
+    height: auto;
+    .main-col {
+      padding: 8rem 0;
+
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .container {
+    height: 100%;
+  }
+  .hello {
+    color: var(--yellow);
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    margin-bottom: var(--spacing-md);
+    font-weight: 400;
+
+    span {
+      color: var(--green-dark);
+    }
+    @media only screen and (max-width: 992px) {
+      margin-top: 5rem;
+    }
+  }
+
+  .title {
+    font-size: var(--fz-huge);
+    font-weight: 800;
+    line-height: 0.9;
+    margin-bottom: var(--spacing-md);
+    color: var(--white);
+
+    &-center {
+      text-align: center;
+    }
+  }
+  .row {
+    align-items: center;
+    height: 100%;
+  }
+
+  .titlePart {
+    color: var(--green-light);
+  }
+
+  .text {
+    font-weight: 500;
+    margin-bottom: var(--spacing-xl);
+    color: var(--stale);
+    font-size: var(--fz-xs);
+    width: 90%;
+  }
+
+  .col-photo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @media only screen and (max-width: 992px) {
+      justify-content: center;
+      margin-top: 4rem;
+    }
+  }
+  .avatarShapes {
+    position: absolute;
+    width: 40rem;
+    left: -4rem;
+    top: 10rem;
+    @media only screen and (max-width: 992px) {
+      width: 37rem;
+    }
+    @media only screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 38%;
+    right: 0;
+    bottom: 0;
+    background-color: var(--green);
+    overflow: hidden;
+    flex-grow: 1;
+    border-top-left-radius: var(--border-radius);
+    @media only screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  .xs-overlay {
+    height: 100%;
+    background-color: var(--green);
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -7px;
+    display: none;
+    @media only screen and (max-width: 992px) {
+      display: block;
+    }
+  }
+
+  .photo {
+    height: 30rem;
+    width: 30rem;
+
+    position: relative;
+    background-color: gray;
+    border-radius: var(--border-radius);
+
+    @media only screen and (max-width: 992px) {
+      margin: 5rem auto;
+    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   height: 100%;
+    //   width: 100%;
+    //   background-color: tomato;
+    //   left: 2rem;
+    //   top: 2rem;
+    //   z-index: -1;
+    // }
+  }
+}

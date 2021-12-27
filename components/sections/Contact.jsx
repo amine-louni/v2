@@ -1,10 +1,3 @@
-import Image from "next/image";
-import classes from "../../styles/Home.module.scss";
-import squareBlue from "./../../public/square-blue.svg";
-import zigZagBlue from "./../../public/zigzag-blue.svg";
-import circlesagBlue from "./../../public/circles-blue.svg";
-import { FiFolder, FiExternalLink, FiGithub } from "react-icons/fi";
-
 export default function Contact() {
   return (
     <section className="section">

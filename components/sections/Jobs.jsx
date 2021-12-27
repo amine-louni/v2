@@ -1,16 +1,11 @@
-import classes from "../../styles/Home.module.scss";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 export default function Jobs() {
   return (
-    <section
-      className={`${classes["section-dark"]} ${classes["jobs-section"]}`}
-    >
-      <h3 className={classes["bg-heading-light"]}>Experience</h3>
+    <section className="section-dark jobs-section">
+      <h3 className="bg-heading-light">Experience</h3>
       <div className="container">
-        <h2
-          className={`${classes["section-title"]} ${classes["section-title-light"]}`}
-        >
+        <h2 className="section-title section-title-light">
           <span>02. </span> Where I’ve Worked
         </h2>
         <div className="row">

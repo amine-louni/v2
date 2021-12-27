@@ -1,8 +1,5 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import classes from "../styles/Home.module.scss";
-import AvatarShapes from "../public/photo-bg.svg";
-
 import { useEffect, useState } from "react";
 import Hero from "../components/sections/Hero";
 import About from "../components/sections/About";
@@ -27,7 +24,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={open && classes.blurred}>
+      <main className={open && "blurred"}>
         <Navbar open={open} setOpen={setOpen} />
         <Hero />
 

@@ -1,0 +1,141 @@
+.react-tabs {
+  display: flex;
+  margin-top: var(--spacing-xxl);
+  width: 100%;
+
+  background-color: #fff;
+
+  color: var(--white);
+  background: var(--blue);
+  transition: var(--transition);
+  @media only screen and (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+
+  @media only screen and (max-width: 992px) {
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: var(--spacing-md);
+  }
+}
+
+.react-tabs__tab {
+  list-style: none;
+  width: 200px;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  cursor: pointer;
+  border-left: 2px solid var(--white);
+  font-size: 1rem;
+  transition: background 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  & p {
+    font-family: var(--font-mono);
+  }
+  @media only screen and (max-width: 992px) {
+    text-align: center;
+    padding: 10px 30px;
+    border-left: none;
+  }
+  & p {
+    font-size: var(--fz-md);
+  }
+  &:hover {
+    background-color: var(--green-transparent);
+  }
+}
+
+.react-tabs__tab--selected {
+  background-color: var(--green-transparent);
+  border-left: 2px solid var(--green);
+  border-radius: var(--border-radius);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  & p {
+    color: var(--green);
+  }
+
+  @media only screen and (max-width: 992px) {
+    border-left: none;
+    border-bottom: 2px solid var(--green);
+    background-color: transparent !important;
+  }
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.panel-content {
+  padding-left: var(--spacing-md);
+  & h3 {
+    & .title {
+      margin-right: var(--spacing-xs);
+      color: var(--white);
+      font-weight: 600;
+    }
+    & a {
+      text-decoration: none;
+      color: var(--green);
+      font-weight: 600;
+      font-family: var(--font-mono);
+    }
+  }
+
+  & small {
+    font-family: var(--font-mono);
+  }
+  & p {
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--fz-xs);
+  }
+  & ul {
+    margin-top: var(--spacing-md);
+    list-style: none;
+
+    & li {
+      font-size: var(--fz-xs);
+      padding-left: var(--spacing-md);
+      margin-bottom: var(--spacing-xs);
+      position: relative;
+      &::before {
+        content: "▶";
+        font-size: 0.7rem;
+        color: var(--green);
+        position: relative;
+        left: -1rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    padding-left: 0;
+  }
+}
+.react-tabs__tab-panel--selected {
+  animation: slideeffect 500ms ease-out;
+  opacity: 1;
+}
+
+@keyframes slideeffect {
+  0% {
+    opacity: 0;
+    transform: translateX(3%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
