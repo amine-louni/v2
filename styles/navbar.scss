@@ -5,17 +5,25 @@
   left: 0;
   width: 100%;
   z-index: 1;
-  color: var(--white);
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  box-shadow: -10px 0px 30px -15px rgb(17, 14, 37);
   ul {
     list-style-type: none;
     display: flex;
     align-items: center;
     li {
+      transition: var(--transition);
       font-family: var(--font-mono);
       padding: 7px 14px;
       text-transform: capitalize;
-      & .active {
-        background-color: red;
+      a {
+        color: var(--stale);
+      }
+      .active {
         color: var(--green);
       }
       cursor: pointer;
@@ -27,17 +35,14 @@
         font-family: var(--font-mono);
         color: var(--green);
       }
+      &:hover a {
+        color: var(--green);
+      }
     }
     @media only screen and (max-width: 992px) {
       display: none;
     }
   }
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .humburger {

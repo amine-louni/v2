@@ -1,19 +1,19 @@
 import React from "react";
 import { Link } from "react-scroll";
-import classes from "../styles/Navbar.module.scss";
+
 const Navbar = ({ open, setOpen }) => {
   return (
     <>
       <div
-        className={`${classes.humburger} ${open && classes["humburger-open"]}`}
+        className={`humburger ${open && "humburger-open"}`}
         onClick={() => setOpen(!open)}
       >
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <nav className={classes.root}>
-        <div className={`container ${classes.container}`}>
+      <nav className="root">
+        <div className="container">
           <h4>Amine Louni</h4>
           <ul>
             <li>
@@ -71,7 +71,7 @@ const Navbar = ({ open, setOpen }) => {
           </ul>
         </div>
       </nav>
-      <aside className={`${classes.aside} ${open && classes["aside-open"]}`}>
+      <aside className={`aside ${open && "aside-open"}`}>
         <ul>
           <li>
             <Link
