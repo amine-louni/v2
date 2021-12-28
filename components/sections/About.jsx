@@ -12,7 +12,11 @@ export default function About() {
         </h2>
 
         <div className="row">
-          <div className="col-lg-6 mb-lg">
+          <div
+            data-aos-duration={500}
+            data-aos="fade-in"
+            className="col-lg-6 mb-lg "
+          >
             <h3>Software enginnering</h3>
             <p>
               I solve clients problems using digital solutions , Another reason
@@ -37,7 +41,12 @@ export default function About() {
             </figure>
           </div>
 
-          <div className={"col-lg-6  design-col"}>
+          <div
+            data-aos-duration={1000}
+            data-aos="fade-in"
+            data-aos-delay={600}
+            className={"col-lg-6  design-col"}
+          >
             <figure className="form-1">
               <Image src={greenSquares} alt="zig zag" />
             </figure>

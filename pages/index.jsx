@@ -6,6 +6,7 @@ import About from "../components/sections/About";
 import Jobs from "../components/sections/Jobs";
 import Works from "../components/sections/Works";
 import Contact from "../components/sections/Contact";
+import AOS from "aos";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -16,6 +17,10 @@ export default function Home() {
       document.querySelector("body").classList.remove("blurred");
     }
   }, [open]);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Head>

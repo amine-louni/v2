@@ -33,15 +33,15 @@ const Navbar = ({ open, setOpen }) => {
       </div>
       <nav className="root">
         <div className="container">
-          <h4 className="animate__animated animate__fadeInDown  animate-delay-1">
+          <h4 data-aos="fade-in" data-aos-delay={100}>
             Amine Louni
           </h4>
           <ul>
             {links.map((link, index) => (
               <li
-                className={`animate__animated animate__fadeInDown  animate-delay-${
-                  index + 1
-                }`}
+                data-aos-duration={700}
+                data-aos="fade-down"
+                data-aos-delay={150 * index}
                 key={link.title}
               >
                 <Link
@@ -57,7 +57,11 @@ const Navbar = ({ open, setOpen }) => {
               </li>
             ))}
 
-            <li className="animate__animated animate__fadeInDown  animate-delay-7">
+            <li
+              data-aos-duration={700}
+              data-aos="fade-down"
+              data-aos-delay={600}
+            >
               <button className="btn btn-sm">Resume</button>
             </li>
           </ul>
