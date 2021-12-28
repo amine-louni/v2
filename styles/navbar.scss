@@ -17,11 +17,11 @@
     align-items: center;
     li {
       transition: var(--transition);
-      font-family: var(--font-mono);
       padding: 7px 14px;
       text-transform: capitalize;
       a {
         color: var(--stale);
+        font-family: var(--font-mono);
       }
       .active {
         color: var(--green);

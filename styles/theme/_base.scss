@@ -19,3 +19,9 @@ body {
 
   overflow-x: hidden;
 }
+
+@for $i from 1 through 1000 {
+  .animate-delay-#{$i} {
+    animation-delay: #{$i * 0.1}s;
+  }
+}
