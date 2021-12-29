@@ -14,6 +14,18 @@ export default function Works() {
           <div className="col-lg-6">
             <Project />
           </div>
+          <div className="col-lg-6">
+            <Project />
+          </div>
+          <div className="col-lg-6">
+            <Project />
+          </div>
+          <div className="col-lg-6">
+            <Project />
+          </div>
+          <div className="col-lg-6">
+            <Project />
+          </div>
         </div>
       </div>
     </section>
