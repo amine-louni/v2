@@ -14,7 +14,7 @@ export default function Contact() {
       <div className="container">
         <div className="title-center">
           <h4 className="title-center__intro">
-            <span>04. </span>Contact
+            <span>04. </span>What&apos;s Next?
           </h4>
           <h2 className="title-center__main">Get In Touch</h2>
 

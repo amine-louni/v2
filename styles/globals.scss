@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&family=Roboto+Mono:wght@400&display=swap");
+
+@import "./theme/typography";
 @import "./theme/variables.scss";
 @import "./theme/base";
 @import "./theme/layout";
 @import "./theme/buttons";
-@import "./theme/typography";
 @import "./navbar.scss";
 @import "./sections/hero.scss";
 @import "./sections/about.scss";
