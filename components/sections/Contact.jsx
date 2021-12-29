@@ -1,6 +1,16 @@
+import Image from "next/image";
+import zigZag from "../../public/zigzag-yellow.svg";
+import squares from "../../public/square-yellow.svg";
+
 export default function Contact() {
   return (
-    <section id="contact" className="section">
+    <section id="contact" className="section contact">
+      <figure className="contact__form contact__form-1">
+        <Image src={zigZag} alt="zig zag" />
+      </figure>
+      <figure className="contact__form contact__form-2">
+        <Image src={squares} alt="zig zag" className="contact__form-2" />
+      </figure>
       <div className="container">
         <div className="title-center">
           <h4 className="title-center__intro">
