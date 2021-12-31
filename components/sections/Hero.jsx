@@ -63,12 +63,7 @@ export default function Hero() {
             >
               <Image src={AvatarShapes} alt="shapes" />
             </div>
-            <div
-              data-aos-duration={1000}
-              data-aos="fade-in"
-              data-aos-delay={1900}
-              className={"photo "}
-            ></div>
+            <div className={"photo "}></div>
           </div>
         </div>
       </div>
