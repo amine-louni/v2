@@ -1,6 +1,6 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
-export default function Jobs() {
+export default function Jobs({ jobsData }) {
   return (
     <section id="jobs" className="section-dark jobs-section">
       <h3 className="bg-heading-light">Experience</h3>
@@ -14,62 +14,35 @@ export default function Jobs() {
           <div className="col-lg-8 " data-aos-duration={500} data-aos="fade-up">
             <Tabs>
               <TabList>
-                <Tab>
-                  <p>Goldencorp</p>
-                </Tab>
-                <Tab>
-                  <p>Orcloud</p>
-                </Tab>
+                {jobsData.map((jobData) => (
+                  <Tab key={jobData.fields.company}>
+                    <p>{jobData.fields.company}</p>
+                  </Tab>
+                ))}
               </TabList>
-              <TabPanel>
-                <div className="panel-content">
-                  <h3>
-                    <span className="title">Full stack developer</span>
-                    <a href="#">@Goldencorp</a>
-                  </h3>
-                  <small>October 2020 - Present</small>
+              {jobsData.map((jobData) => (
+                <TabPanel key={jobData.fields.company}>
+                  <div className="panel-content">
+                    <h3>
+                      <span className="title">{jobData.fields.title}</span>
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href={jobData.fields.companyLink}
+                      >
+                        @{jobData.fields.company}
+                      </a>
+                    </h3>
+                    <small>{jobData.fields.time}</small>
 
-                  <ul>
-                    <li>
-                      Developing the frontend using react and the latest
-                      technologies while keeping performance in check.
-                    </li>
-                    <li>Optimize and build new features using react-native.</li>
-                    <li>
-                      Develop intuitive, usable, and engaging interactions and
-                      visual designs for mobile.
-                    </li>
-                    <li>Developing features to enhance the user experience.</li>
-                  </ul>
-                </div>
-              </TabPanel>
-              <TabPanel>
-                <div className="panel-content">
-                  <h3>
-                    <span className="title">Front end developer</span>
-                    <a href="#">@Orcloud</a>
-                  </h3>
-                  <small>September 2019 - October 2020</small>
-
-                  <ul>
-                    <li>
-                      Collaborate with the project manager to create a brand
-                      identity for clients.
-                    </li>
-                    <li>Determining the structure and design of web pages.</li>
-                    <li>
-                      Optimizing web pages for maximum speed and scalability.
-                    </li>
-                    <li>
-                      Maintaining brand consistency throughout the design.
-                    </li>
-                    <li>
-                      Make sure that the website work on all devices (Desktop,
-                      Tablet. Phone)
-                    </li>
-                  </ul>
-                </div>
-              </TabPanel>
+                    <ul>
+                      {jobData.fields.duties.map((oneDuty) => (
+                        <li key={oneDuty}>{oneDuty}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </TabPanel>
+              ))}
             </Tabs>
           </div>
           <div className="col-lg-2"></div>

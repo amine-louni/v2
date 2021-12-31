@@ -25,3 +25,6 @@ body {
     animation-delay: #{$i * 0.1}s;
   }
 }
+code {
+  font-family: var(--font-mono) !important;
+}

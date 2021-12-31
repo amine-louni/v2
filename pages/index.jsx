@@ -7,8 +7,25 @@ import Jobs from "../components/sections/Jobs";
 import Works from "../components/sections/Works";
 import Contact from "../components/sections/Contact";
 import AOS from "aos";
+import { createClient } from "contentful";
 
-export default function Home() {
+export async function getStaticProps() {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  });
+
+  const jobsRes = await client.getEntries({ content_type: "jobs" });
+  const projectsRes = await client.getEntries({ content_type: "projects" });
+  return {
+    props: {
+      jobs: jobsRes.items,
+      projects: projectsRes.items,
+    },
+  };
+}
+
+export default function Home({ jobs, projects }) {
   const [open, setOpen] = useState(false);
   useEffect(() => {
     if (open) {
@@ -21,6 +38,7 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
   }, []);
+
   return (
     <>
       <Head>
@@ -35,9 +53,9 @@ export default function Home() {
 
         <About />
 
-        <Jobs />
+        <Jobs jobsData={jobs} />
 
-        <Works />
+        <Works projectsData={projects} />
 
         <Contact />
       </main>

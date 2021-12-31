@@ -1,7 +1,8 @@
 import { FiFolder, FiExternalLink, FiGithub } from "react-icons/fi";
 import Project from "../Project";
 
-export default function Works() {
+export default function Works({ projectsData }) {
+  console.log(projectsData);
   return (
     <section id="works" className="section">
       <h3 className="bg-heading-light">Works</h3>
@@ -11,21 +12,17 @@ export default function Works() {
         </h2>
 
         <div className="row">
-          <div className="col-lg-6">
-            <Project />
-          </div>
-          <div className="col-lg-6">
-            <Project />
-          </div>
-          <div className="col-lg-6">
-            <Project />
-          </div>
-          <div className="col-lg-6">
-            <Project />
-          </div>
-          <div className="col-lg-6">
-            <Project />
-          </div>
+          {projectsData.map((oneProject) => (
+            <div key={oneProject.name} className="col-lg-6">
+              <Project
+                stack={oneProject.fields.stack}
+                name={oneProject.fields.name}
+                githubLink={oneProject.fields.gihtubLink}
+                link={oneProject.fields.link}
+                description={oneProject.fields.description}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
