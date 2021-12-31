@@ -61,7 +61,7 @@ export default function Home({ jobs, projects }) {
       </main>
       <footer className="footer">
         <div className="container text-center">
-          <p>Built With Next.js by Amine Louni</p>
+          <p>Built With Next.js and Contentful and deployed to vercel</p>
         </div>
       </footer>
     </>
