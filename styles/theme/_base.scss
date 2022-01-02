@@ -28,3 +28,24 @@ body {
 code {
   font-family: var(--font-mono) !important;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: var(--spacing-xs);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--blue-dark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--stale);
+  border-radius: var(--spacing-md);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
