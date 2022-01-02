@@ -2,7 +2,6 @@ import { FiFolder, FiExternalLink, FiGithub } from "react-icons/fi";
 import Project from "../Project";
 
 export default function Works({ projectsData }) {
-  console.log(projectsData);
   return (
     <section id="works" className="section">
       <h3 className="bg-heading-light">Works</h3>

@@ -3,7 +3,6 @@ import { FiExternalLink, FiFolder, FiGithub } from "react-icons/fi";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 function Project({ link, githubLink, name, stack, description }) {
-  console.log(link, "link");
   return (
     <div className="project">
       <div className="project__content">

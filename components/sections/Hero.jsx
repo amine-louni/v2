@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Link } from "react-scroll";
 import AvatarShapes from "../../public/photo-bg.svg";
 
 export default function Hero() {
@@ -42,14 +43,23 @@ export default function Hero() {
                 collaborated with talented people to create digital products for
                 both business and consumer use.
               </p>
-              <button
-                className="btn  "
-                data-aos-duration={1000}
-                data-aos="fade-up"
-                data-aos-delay={1700}
+              <Link
+                activeClass="active"
+                to={"works"}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
               >
-                <span className="btn__text">Check out my works</span>{" "}
-              </button>
+                <button
+                  className="btn  "
+                  data-aos-duration={1000}
+                  data-aos="fade-up"
+                  data-aos-delay={1700}
+                >
+                  <span className="btn__text">Check out my works</span>{" "}
+                </button>
+              </Link>
               <br />
             </div>
           </div>

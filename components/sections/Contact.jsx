@@ -32,7 +32,9 @@ export default function Contact() {
         </div>
 
         <div className="cta">
-          <button className="btn">Say Hello</button>
+          <a className="btn" href="mailto: amine.louni.dev@gmail.com">
+            Say Hello
+          </a>
         </div>
       </div>
     </section>
