@@ -62,7 +62,9 @@ const Navbar = ({ open, setOpen }) => {
               data-aos="fade-down"
               data-aos-delay={600}
             >
-              <button className="btn btn-sm">Resume</button>
+              <a target="_blank" className="btn btn-sm" href="/resume.pdf">
+                Resume
+              </a>
             </li>
           </ul>
         </div>

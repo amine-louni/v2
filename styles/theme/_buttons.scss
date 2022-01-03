@@ -3,10 +3,11 @@
   text-decoration: none;
   font-size: var(--fz-md);
   font-family: var(--font-mono);
+   
   cursor: pointer;
   background-color: transparent;
   border: 1px solid var(--green);
-  color: var(--green);
+  color: var(--green) !important;
   border-radius: var(--border-radius);
   display: flex;
   align-items: center;
