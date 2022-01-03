@@ -22,7 +22,7 @@ main {
 .blurred {
   overflow: hidden;
   main div > * {
-    filter: blur(4px) brightness(1);
+    filter: blur(1px) brightness(1);
     transition: var(--transition);
 
     pointer-events: none;
