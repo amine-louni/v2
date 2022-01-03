@@ -1,5 +1,7 @@
+import Image from "next/image";
 import React from "react";
 import { Link } from "react-scroll";
+import logo from "../public/logo.svg";
 
 const links = [
   {
@@ -34,7 +36,7 @@ const Navbar = ({ open, setOpen }) => {
       <nav className="root">
         <div className="container">
           <h4 data-aos="fade-in" data-aos-delay={100}>
-            Amine Louni
+            <Image height={40} width={40} src={logo} alt="zig zag" />
           </h4>
           <ul>
             {links.map((link, index) => (
