@@ -73,57 +73,25 @@ const Navbar = ({ open, setOpen }) => {
       </nav>
       <aside className={`aside ${open && "aside-open"}`}>
         <ul>
+          {links.map((link, index) => (
+            <li key={link.title}>
+              <Link
+                onClick={() => setOpen(false)}
+                activeClass="active"
+                to={link.url}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <span>0{index + 1}.</span> {link.title}
+              </Link>
+            </li>
+          ))}
           <li>
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              <span>01.</span> about
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
-              to="jobs"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              <span>02.</span> experience
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
-              to="works"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              <span>03.</span> works
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              <span>04.</span> contact
-            </Link>
-          </li>
-
-          <li>
-            <button className="btn btn-sm">Resume</button>
+            <a target="_blank" className="btn btn-sm" href="/resume.pdf">
+              Resume
+            </a>
           </li>
         </ul>
       </aside>
