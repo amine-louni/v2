@@ -46,44 +46,20 @@ export default function Home({ jobs, projects }) {
         <title>Amine Louni</title>
 
         <title>Amine Louni - Full-stack software engineer </title>
-        <meta
-          name="title"
-          content="Amine Louni - Full-stack  software engineer "
-        />
+        <meta name="title" content="Amine Louni - Software engineer" />
         <meta
           name="description"
-          content="Amine Louni is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences."
-        />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
-        <meta
-          property="og:title"
-          content="Amine Louni - Full-stack  software engineer "
+          content="Amine Louni is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences"
         />
         <meta
-          property="og:description"
-          content="Amine Louni is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences."
+          name="keywords"
+          content="Sofware Engineer, React, React Native, Javascript, web, apps , android , front end, back end, full stack"
         />
-        <meta
-          property="og:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://metatags.io/" />
-        <meta
-          property="twitter:title"
-          content="Amine Louni - Full-stack  software engineer "
-        />
-        <meta
-          property="twitter:description"
-          content="Amine Louni is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences."
-        />
-        <meta
-          property="twitter:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
-        />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <meta name="author" content="Amine Louni" />
+        <meta property="og:image" content="/thumbnail.png" />
 
         <link
           rel="apple-touch-icon"
