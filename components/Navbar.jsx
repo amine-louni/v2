@@ -36,7 +36,7 @@ const Navbar = ({ open, setOpen }) => {
       <nav className="root">
         <div className="container">
           <h4 data-aos="fade-in" data-aos-delay={100}>
-            <Image height={40} width={40} src={logo} alt="zig zag" />
+            Amine Louni
           </h4>
           <ul>
             {links.map((link, index) => (
