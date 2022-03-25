@@ -10,8 +10,12 @@ export default function Jobs({ jobsData }) {
         </h2>
 
         <div className="row">
-          <div className="col-lg-2"></div>
-          <div className="col-lg-8 " data-aos-duration={500} data-aos="fade-up">
+          <div className="col-lg-1"></div>
+          <div
+            className="col-lg-10 "
+            data-aos-duration={500}
+            data-aos="fade-up"
+          >
             <Tabs>
               <TabList>
                 {jobsData.map((jobData) => (
@@ -45,7 +49,7 @@ export default function Jobs({ jobsData }) {
               ))}
             </Tabs>
           </div>
-          <div className="col-lg-2"></div>
+          <div className="col-lg-1"></div>
         </div>
       </div>
     </section>

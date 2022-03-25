@@ -48,12 +48,12 @@
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
     &::before {
-      content: "▶";
+      content: ">";
       position: absolute;
       left: 0px;
+      font-weight: bold;
       color: var(--green-dark);
-      font-size: var(--fz-xxs);
-      line-height: 12px;
+      font-size: var(--fz-xs);
     }
   }
 }

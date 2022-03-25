@@ -13,7 +13,7 @@ export default function Hero() {
                 data-aos="fade-up"
                 data-aos-delay={1500}
               >
-                <span>▶</span> Hy my name is
+                <span>{">"}</span> Hello world, my name is
               </h4>
               <h4
                 className={"title"}

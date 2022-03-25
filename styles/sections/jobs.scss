@@ -34,7 +34,7 @@
   padding: 1.5rem 0 1.5rem 1.5rem;
   cursor: pointer;
   border-left: 2px solid var(--white);
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: background 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   & p {
     font-family: var(--font-mono);
@@ -107,13 +107,14 @@
     list-style: none;
 
     & li {
-      font-size: var(--fz-xs);
+      font-size: var(--fz-md);
       padding-left: var(--spacing-md);
       margin-bottom: var(--spacing-xs);
       position: relative;
+      margin-bottom: 1rem;
       &::before {
-        content: "▶";
-        font-size: 0.7rem;
+        content: ">";
+        font-size: 1.4rem;
         color: var(--green);
         position: relative;
         left: -1rem;
