@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Link } from "react-scroll";
 import AvatarShapes from "../../public/photo-bg.svg";
+import Me from "../../public/me.jpg";
 
 export default function Hero() {
   return (
@@ -73,7 +74,16 @@ export default function Hero() {
             >
               <Image src={AvatarShapes} alt="shapes" />
             </div>
-            <div className={"photo "}></div>
+            <div className="img-container">
+              <Image
+                className={"photo "}
+                height={330}
+                width={300}
+                src={Me}
+                alt="amint louni"
+              />
+              <div className="img-container__overlay"></div>
+            </div>
           </div>
         </div>
       </div>
