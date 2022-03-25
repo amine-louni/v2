@@ -78,3 +78,46 @@
     display: none;
   }
 }
+
+.avatar-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .img-container {
+    display: inline-block;
+
+    position: relative;
+
+    & .photo {
+      position: relative;
+
+      border-radius: var(--border-radius);
+
+      @media only screen and (max-width: 992px) {
+        margin: 5rem auto;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: tomato;
+        left: 0rem;
+        top: 0rem;
+        z-index: 2;
+      }
+    }
+    &__overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--green-50);
+    }
+  }
+  & .shapes {
+    position: absolute;
+  }
+}

@@ -1,6 +1,7 @@
 import Image from "next/image";
-import greenSquares from "./../../public/green-squares.svg";
 import circlesagBlue from "./../../public/circles-blue.svg";
+import Me from "../../public/me.jpg";
+import AvatarShapes from "../../public/photo-bg.svg";
 
 export default function About() {
   return (
@@ -12,12 +13,7 @@ export default function About() {
         </h2>
 
         <div className="row">
-          <div
-            data-aos-duration={500}
-            data-aos="fade-in"
-            className="col-lg-6 mb-lg "
-          >
-            <h3>Software enginnering</h3>
+          <div data-aos="fade-in" className="col-lg-6 mb-lg ">
             <p>
               I solve clients problems using digital solutions , Another reason
               a software engineering career is a great choice for me because the
@@ -41,29 +37,22 @@ export default function About() {
             </figure>
           </div>
 
-          <div
-            data-aos-duration={1000}
-            data-aos="fade-in"
-            data-aos-delay={600}
-            className={"col-lg-6  design-col"}
-          >
-            <figure className="form-1">
-              <Image src={greenSquares} alt="zig zag" />
-            </figure>
-            <h3>Passion for design</h3>
-            <p>
-              Being a Web designer enables you to not only work with websites
-              every day but also to shape the way people interact with the Web.
-              Plus, these days, a customer&apos;s first impression of a company
-              is often through its website rather than print materials such as
-              business cards or marketing mailings.
-            </p>
-            <p>Here are a few tools I’ve been working with recently:</p>
-            <ul className="skillsList">
-              <li>Figma</li>
-              <li>Adobe illustrator</li>
-              <li>Adobe XD</li>
-            </ul>
+          <div data-aos="fade-in" data-aos-delay={600} className={"col-lg-6"}>
+            <div className="avatar-wrapper">
+              <figure className="shapes">
+                <Image src={AvatarShapes} alt="shapes" />
+              </figure>
+              <div className="img-container">
+                <Image
+                  className={"photo "}
+                  height={300}
+                  width={280}
+                  src={Me}
+                  alt="amint louni"
+                />
+                <div className="img-container__overlay"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
