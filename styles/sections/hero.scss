@@ -7,12 +7,13 @@
     display: flex;
     align-items: center;
     margin-top: 80px;
+    @media only screen and (max-width: 992px) {
+      margin-top: 80px;
+    }
   }
   @media only screen and (max-width: 992px) {
     height: auto;
     .main-col {
-      padding: 8rem 0;
-
       display: flex;
       align-items: center;
     }
@@ -46,6 +47,9 @@
     &-center {
       text-align: center;
     }
+    @media only screen and (max-width: 992px) {
+      font-size: var(--fz-heading);
+    }
   }
   .sub-title {
     font-size: var(--fz-extra);
@@ -53,6 +57,9 @@
     line-height: 0.9;
     margin-bottom: var(--spacing-md);
     color: var(--stale);
+    @media only screen and (max-width: 992px) {
+      font-size: var(--fz-heading);
+    }
   }
   .row {
     align-items: center;
