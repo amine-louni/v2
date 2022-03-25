@@ -37,7 +37,7 @@ export default function About() {
             </figure>
           </div>
 
-          <div data-aos="fade-in" data-aos-delay={600} className={"col-lg-6"}>
+          <div data-aos="fade-in" data-aos-delay={100} className={"col-lg-6"}>
             <div className="avatar-wrapper">
               <figure className="shapes">
                 <Image src={AvatarShapes} alt="shapes" />
