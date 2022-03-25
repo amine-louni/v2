@@ -31,16 +31,15 @@ export default function About() {
               <li>TypeScript</li>
               <li>React native</li>
             </ul>
-
-            <figure className="form-2">
-              <Image src={circlesagBlue} alt="zig zag" />
-            </figure>
           </div>
 
           <div data-aos="fade-in" data-aos-delay={100} className={"col-lg-6"}>
             <div className="avatar-wrapper">
               <figure className="shapes">
                 <Image src={AvatarShapes} alt="shapes" />
+              </figure>
+              <figure className="shapes shapes-2">
+                <Image src={circlesagBlue} alt="zig zag" />
               </figure>
               <div className="img-container">
                 <Image

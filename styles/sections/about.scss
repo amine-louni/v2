@@ -112,12 +112,16 @@
       position: absolute;
       left: 0;
       top: 0;
-      height: 100%;
+      height: 98%;
       width: 100%;
       background-color: var(--green-50);
     }
   }
   & .shapes {
     position: absolute;
+    &-2 {
+      bottom: -2rem;
+      right: -9rem;
+    }
   }
 }
