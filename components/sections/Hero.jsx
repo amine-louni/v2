@@ -37,10 +37,10 @@ export default function Hero() {
                 data-aos="fade-up"
                 data-aos-delay={1800}
               >
-                Since beginning my journey as a software engineer , I &apos;ve
-                done remote work for agencies, consulted for startups, and
-                collaborated with talented people to create digital products for
-                both business and consumer use.
+                I’m a software engineer specializing in building (and
+                occasionally designing) exceptional digital experiences.
+                Currently, I’m focused on building mobile corss platform
+                applications at Goldencorp .
               </p>
               <Link
                 activeClass="active"
@@ -56,7 +56,7 @@ export default function Hero() {
                   data-aos="fade-up"
                   data-aos-delay={1700}
                 >
-                  <span className="btn__text">Check out my works</span>{" "}
+                  <span className="btn__text">Check out my works!</span>{" "}
                 </button>
               </Link>
               <br />
