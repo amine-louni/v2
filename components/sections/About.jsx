@@ -13,7 +13,7 @@ export default function About() {
         </h2>
 
         <div className="row">
-          <div data-aos="fade-in" className="col-lg-6 mb-lg ">
+          <div data-aos="fade-in" className="col-lg-8 mb-lg ">
             <p>
               I solve clients problems using digital solutions , Another reason
               a software engineering career is a great choice for me because the
@@ -33,7 +33,7 @@ export default function About() {
             </ul>
           </div>
 
-          <div data-aos="fade-in" data-aos-delay={100} className={"col-lg-6"}>
+          <div data-aos="fade-in" data-aos-delay={100} className={"col-lg-4"}>
             <div className="avatar-wrapper">
               <figure className="shapes">
                 <Image src={AvatarShapes} alt="shapes" />
