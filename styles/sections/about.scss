@@ -11,6 +11,17 @@
   }
   &-light {
     color: var(--white);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 1px;
+      width: 18rem;
+      margin-left: 2.4rem;
+      background-color: var(--stale);
+    }
 
     & span {
       color: var(--green);
