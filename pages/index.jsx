@@ -42,6 +42,7 @@ export default function Home({ jobs, projects }) {
   return (
     <>
       <Head>
+        <meta charset="utf-8" />
         <meta name="robots" content="index, follow" />
         <title>Amine Louni</title>
 
@@ -51,11 +52,14 @@ export default function Home({ jobs, projects }) {
           name="description"
           content="Amine Louni is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences"
         />
+        <meta name="author" content="Amine  Louni" />
+
+        <meta name="copyright" content="Amine Louni" />
         <meta
           name="keywords"
           content="Sofware Engineer, React, React Native, Javascript, web, apps , android , front end, back end, full stack"
         />
-        <meta name="robots" content="index, follow" />
+
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="author" content="Amine Louni" />
