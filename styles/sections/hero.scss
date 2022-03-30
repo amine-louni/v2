@@ -23,14 +23,14 @@
     height: 100%;
   }
   .hello {
-    color: var(--yellow);
+    color: var(--green);
     font-family: var(--font-mono);
     font-size: var(--fz-md);
     margin-bottom: var(--spacing-md);
     font-weight: 400;
 
     span {
-      color: var(--green-dark);
+      color: var(--green);
     }
     @media only screen and (max-width: 992px) {
       margin-top: 5rem;
@@ -75,7 +75,10 @@
     margin-bottom: var(--spacing-xl);
     color: var(--stale);
     font-size: var(--fz-md);
-    width: 90%;
+    width: 70%;
+    @media only screen and (max-width: 992px) {
+      width: 100%;
+    }
   }
 
   .col-photo {

@@ -8,7 +8,7 @@ export default function Hero() {
           <div className={`col-lg-11  main-col `}>
             <div>
               <h4
-                className={"hello "}
+                className={"hello"}
                 data-aos-duration={1000}
                 data-aos="fade-up"
                 data-aos-delay={1500}
