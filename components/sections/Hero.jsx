@@ -39,8 +39,8 @@ export default function Hero() {
               >
                 I’m a software engineer specializing in building (and
                 occasionally designing) exceptional digital experiences.
-                Currently, I’m focused on building mobile corss platform
-                applications at Goldencorp .
+                Currently, I’m focused on building mobile cross platform
+                applications at Goldencorp.
               </p>
               <Link
                 activeClass="active"
