@@ -5,7 +5,12 @@ import AvatarShapes from "../../public/photo-bg.svg";
 
 export default function About() {
   return (
-    <section className="section" id="about">
+    <section
+      className="section"
+      id="about"
+      data-aos-duration={1000}
+      data-aos="fade-up"
+    >
       <h3 className="bg-heading-light">About</h3>
       <div className="container">
         <h2 className={"section-title section-title-light"}>
