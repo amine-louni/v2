@@ -31,6 +31,7 @@ export default function About() {
             <ul className="skillsList">
               <li>JavaScript (ES6+)</li>
               <li>React</li>
+              <li>Angular</li>           
               <li>Node.js</li>
               <li>TypeScript</li>
               <li>TypeScript</li>
